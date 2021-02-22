@@ -16,6 +16,7 @@ int main()
         printf("Enter the number of boxes :\n");
         scanf("%d",&num_of_box);
         int box_volume=0,box_avg_vol=0;
+        int min_vol , max_vol ;
         
         input_box = (struct Box *)malloc(num_of_box * sizeof(struct Box));
         for(int i=0;i<num_of_box;i++)
@@ -32,11 +33,25 @@ int main()
             printf("Enter the colour: ");
             scanf("%s", &box.color);
             int volume=box.length*box.breadth*box.height;
+            
+            int volume=box.length*box.breadth*box.height;
+            if(max_vol = -1)
+                max_vol = volume;
+            else    
+                max_vol = max_vol < volume ? volume : max_vol;
+            if(min_vol = -1)
+                min_vol =volume;
+            else    
+                min_vol = min_vol > volume ? min_vol : volume;    
+
+            
             box_volume = box_volume +volume;
             printf("Volume is: %d\n",volume);
         }
         box_avg_vol = box_volume/num_of_box;
         printf("Average volume is : %d\n",box_avg_vol);
+        printf("Maximum volume is : %d\n",max_vol);
+        printf("Minimum volume is : %d\n",min_vol);
         return 0;
     
     
