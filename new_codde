@@ -83,29 +83,7 @@ printf("==============================================================\n");
             ptr++;
     }
     printf("Box is of  Maximum height: %f\n", ptr[highest].height);
-// ------------------------------------AVG volume of Boxes-------------------
-printf("---------AVG volume of Boxes------------\n");
-    float sum =ptr[i].volume;
-        // for (i = 0; i < noOfRecords;i++) 
-        {
-            ptr=initial;
-             
-             sum=(sum + ptr[i].volume)/noOfRecords;
-             printf("%f\n",sum);
-             ptr++;
-}
-// ---------------------------Differene of MINIMUM & Maximum-------------------
-printf("---------Differene of MINIMUM & Maximum volume of Boxes------------\n");
-    float differnce_vol=ptr[i].volume;
-        // for (i = 0; i < noOfRecords;i++) 
-        {
-            ptr=initial;
-             
-             differnce_vol=(differnce_vol - ptr[i].volume);
-             printf("%f\n",differnce_vol);
-             ptr++;
-}
-// ---------------------------Differene of MINIMUM & Maximum-------------------
+
 
 return 0;
 }
