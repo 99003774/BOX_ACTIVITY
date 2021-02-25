@@ -30,3 +30,10 @@ int Box_FindBox();
  */
 
 int Count_Color(box_color);
+
+
+int Box_Max_Height(Box_details);
+
+
+int Box_Avg_Volume(Box_details);
+
