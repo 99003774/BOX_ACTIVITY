@@ -29,6 +29,12 @@ void test_Box_Count_Color(void)
 {
     TEST_ASSERT_EQUAL(2, Count_Color("Red"));
 }
+
+void test_Box_Max_Height(void)
+{
+    TEST_ASSERT_EQUAL(30, Box_Max_Height(10,30));
+}
+
 int main(void)
 {
 
