@@ -35,6 +35,10 @@ void test_Box_Max_Height(void)
     TEST_ASSERT_EQUAL(30, Box_Max_Height(10,30));
 }
 
+void test_Box_Avg_Volume(void)
+{
+     TEST_ASSERT_EQUAL(15, Box_Avg_Volume(10,20));
+}
 int main(void)
 {
 
@@ -45,6 +49,8 @@ int main(void)
   RUN_TEST(test_Box_Id);
   RUN_TEST(test_Box_Id2);
   RUN_TEST(test_Box_Count_Color);
+  RUN_TEST(test_Box_Max_Height);
+  RUN_TEST(test_Box_Avg_Volume);
   
   return UNITY_END();
 }
