@@ -30,7 +30,7 @@ int main()
      ptr=initial;
     for (i = 0; i < noOfRecords; ++i) 
      {
-    
+    //
     puts("-------------------------------------------------------------\n");
    printf("Enter Attribute value of Box[%d] width, length & height of the cuboids:\n",i+1);
     scanf("%f%f%f", &ptr->width, &ptr->length, &ptr->height);
@@ -83,7 +83,6 @@ printf("==============================================================\n");
             ptr++;
     }
     printf("Box is of  Maximum height: %f\n", ptr[highest].height);
-
 
 return 0;
 }
